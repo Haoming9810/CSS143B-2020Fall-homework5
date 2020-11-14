@@ -46,7 +46,7 @@ public class Problem1Test {
         List<LevelOrderTestCase<Integer>> testCases = getLevelOrderTraverseTestCases();
         for (int i = 0; i < testCases.size(); i++) {
             LevelOrderTestCase<Integer> testCase = testCases.get(i);
-            List<List<Integer>> actual = LevelOrderTraverse.levelOrder(testCase.tree);
+            ArrayList<ArrayList<Integer>> actual = LevelOrderTraverse.levelOrder(testCase.tree);
             assertEquals(testCase.expect.toString(), actual.toString());
         }
     }
